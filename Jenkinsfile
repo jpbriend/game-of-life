@@ -31,7 +31,7 @@ node ("linux") {
         passwordVariable: '_password', 
         usernameVariable: '_user']]) {
 
-        sh "curl -T -k ${local_path}/${war} ftps://\"${env._user}\":${env._password}@${env.azureHost}${target}/"
+        sh "curl -k -T ${local_path}/${war} ftps://\"${env._user}\":${env._password}@${env.azureHost}${target}/"
     }
     
     stage "Verify deployment"
