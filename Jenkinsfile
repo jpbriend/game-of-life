@@ -18,7 +18,7 @@ node ("linux") {
     ensureMaven()
 
     stage "Checkout"
-    git branch: 'azure-pipeline', url: 'https://github.com/harniman/game-of-life'
+    git branch: 'azure-pipeline', url: 'https://github.com/jpbriend/game-of-life'
 
     stage "Build"
 
